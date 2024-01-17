@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Quicksand:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e7e3e7;
+}
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #5b6147;
+  padding: 10px;
+}
+.navbar > ul {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  gap: 20px;
+}
+.navbar > ul > li {
+  transition: all 0.25s ease-in;
+  color: #e7e3e7;
+  font-size: 1.2rem;
+}
+.navbar > ul > li:hover,
+footer a:hover {
+  cursor: pointer;
+  box-shadow: 0px 1.5px 0px 0px #9999b2;
+}
+.navbar > ul > li:active {
+  color: #9999b2;
+}
+#content {
+  margin: 10px auto;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  background-color: #b1c2aa;
+  max-width: 80%;
+  padding: 10px;
+}
+.logoContainer {
+  margin-top: 50px;
+  padding: clamp(10px, 40px, 40px);
+  display: flex;
+  font-family: "Bubblegum Sans", sans-serif;
+  font-size: 2rem;
+}
+footer,
+footer a {
+  font-family: "Quicksand", sans-serif;
+  color: #e7e3e7;
+  transition: all 0.25s ease-in;
+  text-decoration: none;
+}
