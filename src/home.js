@@ -57,7 +57,7 @@ export default function createHome() {
   imagesContainer.appendChild(chiefsPhoto);
 
   const restaurantPhoto = document.createElement("img");
-  restaurantPhoto.src = "images/restaurant.png";
+  restaurantPhoto.src = "images/restaurant.jpg";
   restaurantPhoto.alt = "Our chiefs";
   imagesContainer.appendChild(restaurantPhoto);
 

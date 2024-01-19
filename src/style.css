@@ -26,7 +26,7 @@ header > div:first-child {
 header,
 footer {
   display: flex;
-  background-color: #5b6147;
+  background-color: #212121;
 }
 
 .navbar > ul {
@@ -56,7 +56,7 @@ li.active {
   align-self: center;
   margin: 60px 0;
   display: flex;
-  background-color: #b1c2aa;
+  background-color: #eea178;
   max-width: 80%;
   padding: 10px;
   flex-direction: column;
@@ -82,11 +82,13 @@ h1::after {
 .aboutContainer,
 .logoContainer,
 #content,
-.hoursContainer {
+.hoursContainer,
+.menuContainer {
   border-radius: 15px;
 }
 .aboutContainer,
-.hoursContainer {
+.hoursContainer,
+.menuContainer {
   margin-top: 20px;
   padding: 30px;
   background-color: #e7e3e7;
@@ -99,7 +101,7 @@ h1::after {
   justify-content: center;
 }
 .aboutContainer img {
-  width: max(200px, 5rem, 30%);
+  width: max(180px, 6rem, 30%);
   padding: 15px;
   align-self: center;
   border-radius: 25px;
@@ -121,10 +123,12 @@ h1::after {
 }
 .hoursContainer h3 {
   padding-bottom: 10px;
+  font-size: 1.4rem;
 }
 .schedule {
   padding-top: 10px;
   text-align: center;
+  font-size: 1.1rem;
 }
 .dayContainer > div:first-child {
   color: rgb(45, 45, 45);
@@ -132,6 +136,41 @@ h1::after {
 }
 .dayContainer > div:not(:first-child) {
   font-weight: bold;
+}
+
+.menuContainer {
+  align-items: center;
+}
+.menuContainer > div:first-child {
+  font-size: 1.5rem;
+}
+.menu {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.recipe {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  border: 1px solid rgb(214, 214, 214);
+  padding: 20px;
+  background-color: #f5eff5;
+  border-radius: 15px;
+}
+.recipe > div:first-child {
+  font-weight: bold;
+}
+.recipe > p {
+  max-width: 30ch;
+}
+.menuContainer img {
+  width: max(180px, 6rem, 30%);
+  border-radius: 25px;
 }
 footer {
   padding: 10px;
@@ -143,6 +182,7 @@ footer a {
   color: #e7e3e7;
   transition: all 0.25s ease-in;
 }
+
 @media (max-width: 767px) {
   header {
     padding: 10px;
