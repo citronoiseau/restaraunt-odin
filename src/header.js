@@ -1,8 +1,14 @@
 export default function createHeader() {
   const header = document.querySelector("header");
+
+  const logo = document.createElement("div");
+  logo.textContent = "Sea&See";
+  header.appendChild(logo);
+
   const navbar = document.createElement("div");
   navbar.classList.add("navbar");
   header.appendChild(navbar);
+
   const links = document.createElement("ul");
   navbar.appendChild(links);
 
