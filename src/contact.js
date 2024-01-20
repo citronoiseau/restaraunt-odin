@@ -1,3 +1,4 @@
+import entranceImg from "./images/entrance.jpg";
 export default function createContact() {
   const main = document.querySelector("#content");
 
@@ -21,7 +22,7 @@ export default function createContact() {
   const email = createInfo("totallyrealemail@email.com", information);
 
   const entrancePhoto = document.createElement("img");
-  entrancePhoto.src = "images/entrance.jpg";
+  entrancePhoto.src = entranceImg;
   entrancePhoto.alt = "Our entrance";
   information.appendChild(entrancePhoto);
 }

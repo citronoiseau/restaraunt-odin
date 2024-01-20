@@ -1,3 +1,10 @@
+import codImg from "./images/recipes/cod.jpg";
+import makiImg from "./images/recipes/maki.jpg";
+import philImg from "./images/recipes/phil.jpg";
+import pokeImg from "./images/recipes/poke.jpg";
+import saladImg from "./images/recipes/salad.jpg";
+import spicyTunaImg from "./images/recipes/spicyTuna.jpg";
+
 export default function createMenu() {
   const main = document.querySelector("#content");
 
@@ -18,37 +25,37 @@ export default function createMenu() {
       name: "Spicy Tuna Volcano Roll",
       ingredients:
         "Spicy tuna, avocado, cucumber, sriracha mayo, crispy tempura flakes.",
-      src: "images/recipes/spicyTuna.jpg",
+      src: spicyTunaImg,
     },
     {
       name: "Rainbow Maki",
       ingredients:
         "Tuna, salmon, yellowtail, avocado, cucumber, masago, seaweed paper.",
-      src: "images/recipes/maki.jpg",
+      src: makiImg,
     },
     {
       name: "Miso Glazed Black Cod Nigiri",
       ingredients:
         "Seared black cod marinated and glazed in miso, caramelized scallion topping, ginger garnish.",
-      src: "images/recipes/cod.jpg",
+      src: codImg,
     },
     {
       name: "Spicy Ahi Poke Bowl",
       ingredients:
         "Diced tuna, avocado, mango chunks, edamame, seaweed salad, white rice, sesame seeds, nori flakes.",
-      src: "images/recipes/poke.jpg",
+      src: pokeImg,
     },
     {
       name: "Sea & Sea Salad",
       ingredients:
         "Mixed greens, seaweed salad, wakame, sliced cucumber, sashimi-grade tuna or salmon, sesame seeds, yuzu dressing.",
-      src: "images/recipes/salad.jpg",
+      src: saladImg,
     },
     {
       name: "Philadelphia Roll",
       ingredients:
         "Smoked salmon, cream cheese, cucumber, seaweed paper, sushi rice",
-      src: "images/recipes/phil.jpg",
+      src: philImg,
     },
   ];
 
@@ -65,6 +72,7 @@ export default function createMenu() {
     const picture = document.createElement("img");
     picture.src = menuDish.src;
     picture.alt = menuDish.name;
+    picture.loading = "lazy";
 
     recipe.appendChild(name);
     recipe.appendChild(ingredients);

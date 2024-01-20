@@ -1,3 +1,7 @@
+import teamImg from "./images/team.jpg";
+import chiefsImg from "./images/chiefs.jpg";
+import restaurantImg from "./images/restaurant.jpg";
+
 export default function createHome() {
   const main = document.querySelector("#content");
   const logoContainer = document.createElement("div");
@@ -47,17 +51,17 @@ export default function createHome() {
   aboutContainer.append(imagesContainer);
 
   const aboutPhoto = document.createElement("img");
-  aboutPhoto.src = "images/team.jpg";
+  aboutPhoto.src = teamImg;
   aboutPhoto.alt = "Sea & See Crew";
   imagesContainer.appendChild(aboutPhoto);
 
   const chiefsPhoto = document.createElement("img");
-  chiefsPhoto.src = "images/chiefs.jpg";
+  chiefsPhoto.src = chiefsImg;
   chiefsPhoto.alt = "Our chiefs";
   imagesContainer.appendChild(chiefsPhoto);
 
   const restaurantPhoto = document.createElement("img");
-  restaurantPhoto.src = "images/restaurant.jpg";
+  restaurantPhoto.src = restaurantImg;
   restaurantPhoto.alt = "Our chiefs";
   imagesContainer.appendChild(restaurantPhoto);
 
