@@ -52,6 +52,11 @@ li.active {
 .navbar > ul > li:active {
   opacity: 0.5;
 }
+h1,
+h2,
+h3 {
+  font-family: "Bubblegum Sans", sans-serif;
+}
 #content {
   align-self: center;
   margin: 60px 0;
@@ -61,6 +66,7 @@ li.active {
   padding: 10px;
   flex-direction: column;
   background-image: url(images/pattern.png);
+  border-radius: 15px;
 }
 .logoContainer {
   align-self: center;
@@ -70,6 +76,7 @@ li.active {
   font-family: "Bubblegum Sans", sans-serif;
   font-size: clamp(1.2rem, 5vw, 2rem);
   background-color: #e7e3e7;
+  border-radius: 15px;
 }
 h1::before {
   content: url(images/koi.png);
@@ -79,21 +86,17 @@ h1::after {
   content: url(images/koi2.png);
   padding-left: 10px;
 }
-.aboutContainer,
-.logoContainer,
-#content,
-.hoursContainer,
-.menuContainer {
-  border-radius: 15px;
-}
+
 .aboutContainer,
 .hoursContainer,
-.menuContainer {
+.menuContainer,
+.contactContainer {
   margin-top: 20px;
   padding: 30px;
   background-color: #e7e3e7;
   display: flex;
   flex-direction: column;
+  border-radius: 15px;
 }
 .imagesContainer {
   display: flex;
@@ -144,6 +147,10 @@ h1::after {
 .menuContainer > div:first-child {
   font-size: 1.5rem;
 }
+.menuContainer h2,
+.contactContainer h2 {
+  font-size: 2rem;
+}
 .menu {
   margin-top: 10px;
   display: flex;
@@ -168,9 +175,24 @@ h1::after {
 .recipe > p {
   max-width: 30ch;
 }
-.menuContainer img {
-  width: max(180px, 6rem, 30%);
+.menuContainer img,
+.contactContainer img {
+  width: max(180px, 6rem, 100%);
   border-radius: 25px;
+}
+
+.contactContainer {
+  align-items: center;
+}
+.contactContainer img {
+  padding-top: 10px;
+}
+.info {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
 footer {
   padding: 10px;
